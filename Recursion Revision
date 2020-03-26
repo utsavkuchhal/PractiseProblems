@@ -1,0 +1,19 @@
+public class HelloWorld{
+
+     public static void main(String []args){
+        System.out.println(power(2,4));
+     }
+     
+      public static int power(int x,int n)
+     {
+         
+         if(n == 0)
+         return 1;
+         
+         int recresult = power(x,n - 1);
+         
+         int ans = recresult*x;
+         
+         return ans;
+     }
+}
