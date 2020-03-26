@@ -1,0 +1,19 @@
+public class HelloWorld{
+
+     public static void main(String []args){
+        System.out.println(factorial(4));
+     }
+     
+      public static int factorial(int x)
+     {
+         
+         if(x == 0)
+         return 1;
+         
+         int recresult = factorial(x - 1);
+         
+         int ans = recresult*x;
+         
+         return ans;
+     }
+}
